@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Header*/
+header{
+    background: black;
+    background-image: url("Images/1.jpg");
+    background: size 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    padding:  20px;
+    text-align: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+header .mobile{
+    display: none;
+}
+header .logo a{
+    background-image: url("Images/Logo.png");
+    background-size: 200px;
+    background-repeat: no-repeat ;
+    display: inline-block;
+    height: 170px;
+    position: relative;
+    text-indent: -999999999px;
+    top: -90px;
+    width: 300px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li{
+    display:inline-block ;
+    margin-right: 20px;
+    color: white;
+    }
+
+/*RESPONSIVE RULE */ 
+@media screen and(max-width: 800px){
+    header {
+        height: 200px;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+            display: none;
+        }
+
+}
+
+/*Features*/
+.features{
+    color: gray;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+.features figure{
+    margin: auto;
+    text-align:center ;
+    text-transform: uppercase;
+    width: 200px;
+}
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    width: 200px;
+}
+/*Footer*/
+footer{
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+}
